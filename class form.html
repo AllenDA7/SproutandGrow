@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Sign-Up</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Class Sign-Up Form</h1>
+    <p>Register for our upcoming classes and workshops!</p>
+  </header>
+
+  <main>
+    
+    <a href="index.html" class="back-to-home-btn">
+      <button type="button">Back to Home</button>
+    </a>
+
+    <form action="/submit" method="POST">
+      
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br>
+      </fieldset>
+
+      
+      <fieldset>
+        <legend>Class Selection</legend>
+        <label for="classType">Choose a Class:</label>
+        <select id="classType" name="classType" required>
+          <option value="" disabled selected>Select a class</option>
+          <option value="gardening">Gardening 101</option>
+          <option value="herbs">Herbs and Their Uses</option>
+          <option value="landscaping">Landscaping Basics</option>
+          <option value="composting">Composting Techniques</option>
+        </select><br>
+
+        <label for="date">Preferred Class Date:</label>
+        <input type="date" id="date" name="date" required><br>
+      </fieldset>
+
+      
+      <fieldset>
+        <legend>Additional Information</legend>
+        <label for="comments">Comments or Questions:</label><br>
+        <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Write your message here..."></textarea>
+      </fieldset>
+
+     
+      <button type="submit">Sign Up</button>
+      <button type="reset">Clear</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Sprout & Grow. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
+
